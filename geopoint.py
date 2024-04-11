@@ -1,15 +1,8 @@
-""" 
-3. Создать класс Point, который представляет собой точку в двумерном пространстве. 
-Класс должен иметь методы для инициализации координат точки, 
-вычисления расстояния до другой точки, 
-а также для получения и изменения координат.
-
-"""
 
 class Point:
     """  Класс Point для работы с точками в двумерном пространстве """
     
-    def set_coordinates(self, x, y):
+    def set_coordinates(self, x: int, y: int):
         """ Метод для создания точки с координатами """
         
         self.x = x
@@ -20,7 +13,7 @@ class Point:
         
         return (self.x, self.y)
     
-    def update_coordinates(self, x, y):
+    def update_coordinates(self, x: int, y: int):
         """ Метод для обновления координат точки """
         
         self.x = x
@@ -40,11 +33,3 @@ class Point:
     
     
     
-p1 = Point()
-p2 = Point()
-p1.set_coordinates(-1, -7)
-p2.set_coordinates(-2, -7)
-
-print(p1.get_distance(p2))
-# print(p1.update_coordinates(2,4))
-print(p1.get_coordinates())
